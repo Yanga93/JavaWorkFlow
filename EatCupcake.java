@@ -11,21 +11,21 @@ public class EatCupcake {
         System.out.println("Did anyone see you?");
 
         //declares a variable that reads in a line of keyboard input.
-        String myString = sc.next();
+        String myString = sc.next().toLowerCase();
 
         switch (myString) {
 
             case "yes":
                 System.out.println("Was it a boss/lover/parent?. ");
-                String firstInput = sc.next();
+                String firstInput = sc.next().toLowerCase();
 
                 if (firstInput.equals("yes")) {
                     System.out.println("Was it expensive?. ");
-                    String secInput = sc.next();
+                    String secInput = sc.next().toLowerCase();
 
                     if (secInput.equals("yes")) {
                         System.out.println("Can you cut off the part that touched the floor?. ");
-                        String insideInput = sc.next();
+                        String insideInput = sc.next().toLowerCase();
 
                         if (insideInput.equals("yes")) {
                             System.out.println("EAT IT");
@@ -36,7 +36,7 @@ public class EatCupcake {
                         }
                     } else {
                         System.out.println("Is it chocolate? ");
-                        String chocInput = sc.next();
+                        String chocInput = sc.next().toLowerCase();
                         if (chocInput.equals("yes")) {
                             System.out.println("EAT IT. ");
                         } else {
