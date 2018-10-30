@@ -1,5 +1,6 @@
 # JavaWorkFlow
 
+<<<<<<< HEAD
 ### Assignment 1 - Eat Cupcake
 
 In this assignment, you will practice using if statements and getting
@@ -61,3 +62,5 @@ IN > YES.
 OUT > Is your cat healthy?
 IN > NO.
 OUT > YOUR CALL
+=======
+>>>>>>> ad701ac575fb24ac90d8a84c03e865cf1c7bc417
