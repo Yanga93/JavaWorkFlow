@@ -124,6 +124,7 @@ public class RockPaperScissors {
                     System.out.println("Quitting");
                 } else {
                     System.out.println("Player One and Player Two are tied with " + score1 + " points.");
+                    System.out.println("Quitting");
                 }
             } else {
                 System.out.println("Good choice!");
