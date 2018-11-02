@@ -96,7 +96,7 @@ public class RockPaperScissors {
             // scissors vs paper == scissors win
             else if (input1 == 3 && input2 == 2) {
                 score1 = score1 + 1;
-                System.out.println("Player Two Wins!");
+                System.out.println("Player One Wins!");
 
             } else {
                 score1 = score2;
@@ -138,7 +138,7 @@ public class RockPaperScissors {
                         System.out.println("The winner is Player One with " + score1 + " points.");
                         System.out.println("Quitting");
                     } else if (score1 < score2) {
-                        System.out.println("The winner is Player One with " + score2 + " points.");
+                        System.out.println("The winner is Player Two with " + score2 + " points.");
                         System.out.println("Quitting");
                     } else {
                         System.out.println("Player One and Player Two are tied with " + score1 + " points.");
