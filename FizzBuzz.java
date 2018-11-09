@@ -11,29 +11,29 @@ public class FizzBuzz {
         System.out.println("Enter the limit:");
 
         //declares a variable that reads in a line of keyboard input.
-        int userInput = sc.nextInt();
+        int limit = sc.nextInt();
 
         //initialize the array
-        int[] myArray = new int[userInput];
+        String [] myArray = new String[limit];
 
-        for (int i = 0; i < myArray.length; i++) {
-            myArray[i] = i + 1;
-          //  String var = Integer.toString(myArray[i]);
-          //  System.out.println(myArray[var]);
+        for (int i = 1; i <= limit; i++) {
+            myArray[i-1] = Integer.toString(i);
 
-            //var = "Fizz";
-                if( i % 3 == 0){
-                    myArray[i] = "fizz";
-                }
-                else if(i % 5){
-                    myArray[i] = "Buzz";
-                }
-                else if (i % 3 && i % 5){
-                    myArray[i] = "FizzBuzz";
-                }
+            if ((i % 3 == 0) && (i % 5 == 0)){
+                myArray[i -1] =  "FizzBuzz";
+            }
+            else if(i % 3 == 0){
+                myArray[i-1] = "Fizz";
+            }
+            else if(i % 5 == 0){
+                myArray[i-1] = "Buzz";
+            }
+            else{
+                myArray[i-1] = Integer.toString(i);
+            }
         }
 
-       // System.out.println(Arrays.toString(myArray));
+        System.out.println(Arrays.toString(myArray));
 
     }
 }
